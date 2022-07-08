@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+    
+     
+</head>
+<body>
+<div id="overlay" class="overlay">
+    <div class="form">
+       <img class="pd" src="./Images/Group 2.png" alt="smoke">
+       <form >
+        <label for="femail">Email</label>
+        <input type="email" name="femail" id="femail">
+        <label for="fpassword">Password</label>
+        <input type="password" name="fpassword" id="fpassword">
+        <button id="offoverlay" class="pd pdbtn">Enter</button> 
+       </form>
+       
+        
+    </div>
+</div>
+<div class="header">
+<img class="fimage" src="./Images/Group 3.png" alt="2">
+<img class="fimage" src="./Images/Group 2.png" alt="3">
+<img  class="fimage" id="onoverlay"  src="./Images/Group 5.png" alt="5">
+</div>
+<div class="ads">
+<img class="aimg" src="./Images/Orange and White Modern Simple Technology YouTube Thumbnail 3.png" alt="">
+<img class="aimg" src="./Images/Orange and White Modern Simple Technology YouTube Thumbnail 1.png" alt="">
+<img class="aimg" src="./Images/Orange and White Modern Simple Technology YouTube Thumbnail 2.png" alt="">
+</div>
+<div class="pages">
+<div  id="all" class="buttons">
+    <img class="allimg"  src="./Images/Group 12027.png" alt="ALL">
+    
+</div>
+<div class="buttons" id="firstpageid">
+<img class="firstimg" src="./Images/Group 12025.png" alt="first">
+</div>
+<div id="secondpageid" class="buttons">
+    <img class="twoimg" src="./Images/Group 12024.png" alt="i">
+    <img class="menuimg" src="./Images/Menu 2.png" alt="m">
+</div>
+<div  id="thirdpageid" class="buttons">
+    <img class="firstimg"  src="./Images/Group 12025 (1).png" alt="third">
+</div>
+<div id="fourthpageid"  class="buttons">
+    <img class="firstimg" src="./Images/Group 12025 (2).png" alt="fourth">
+</div>
+<div class="rectangle">
+    <img class="arrow" src="./Images/Vector (1).png" alt="">
+</div>
+</div>
+<div id="middle" class="middle">
+    
+</div>
+
+
+<footer>
+
+</footer> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>  
+
+<script type="module" src="./modules/main.js"></script>
+
+<script type="module">
+    import { init,firstpage,secondpage,thirdpage,fourthpage } from "./modules/main.js"
+    init()
+    
+  
+//   firstpage()
+  function on(){
+    document.getElementById("overlay").style.display="block";
+  } 
+  function off(){
+    document.getElementById("overlay").style.display="none";
+  }
+  document.getElementById("all").addEventListener("click",init);
+
+  document.getElementById("firstpageid").addEventListener("click",firstpage);
+
+  document.getElementById("secondpageid").addEventListener("click",secondpage);
+
+  document.getElementById("thirdpageid").addEventListener("click",thirdpage);
+
+  document.getElementById("fourthpageid").addEventListener("click",fourthpage);
+
+  document.getElementById("onoverlay").addEventListener("click",on)
+
+  document.getElementById("offoverlay").addEventListener("click",off)
+</script>
+
+</body>
+
+</html>
